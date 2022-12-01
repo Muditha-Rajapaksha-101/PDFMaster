@@ -63,5 +63,5 @@ class clean(CleanMaster):
                     if(row[0].strip().startswith("LKA") and len(row[0].strip())  == 12 ):
                         finalPageList.append(clean.removeComma(row) )   
         
-            return finalPageList
-``` python
+            return finalPageList 
+```
