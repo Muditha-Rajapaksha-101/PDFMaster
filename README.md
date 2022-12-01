@@ -3,15 +3,15 @@ A custom and Flexible module to scrape data from an editable PDF
 
 ## Installting The Package
 --------------------
-pip install PDFMaster.
+` pip install PDFMaster`
 
 
 ## Getting Started
 ---------------------
 You need the following two modules into your project. Please note that the cleaning funciton is optional.
 
--from PDFMaster.PDFTableMaster import PDFTableMaster
--from PDFMaster.PDFTableMaster import CleanMaster
+`from PDFMaster.PDFTableMaster import PDFTableMaster`
+`from PDFMaster.PDFTableMaster import CleanMaster`
 
 
 
@@ -21,7 +21,7 @@ You need the following two modules into your project. Please note that the clean
 
 > - First you need to create a PDFTableMaster object using its constructor as folows.
 
-`pdfTable = PDFTableMaster("data.pdf")`.
+`pdfTable = PDFTableMaster("data.pdf")`
 
 
 > -  If you want to scrapeonly selected set of pages in your PDF file , You can use the following method to identify those pages.
@@ -32,12 +32,12 @@ pages = pdfTable.identify_Pages_To_Scrape(["A"]).
 
 > -  You can extract those pages to a new pdf file with the following line of code.
     
-`fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional`.
+`fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional`
 
 
 ## Adjusting Parameters to fit your model
 ---------------------
-`pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})`.
+`pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})`
 
 > - You need to provide above 3 main parameter to help the program identify horizontal and vertical boundries of the PDF table.
 > - upperBoundry and lowerBoundry states the upper and lower boundries in the vertical axis to identify rows.
