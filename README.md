@@ -21,7 +21,7 @@ You need the following two modules into your project. Please note that the clean
 
 > - First you need to create a PDFTableMaster object using its constructor as folows.
 
-pdfTable = PDFTableMaster("data.pdf").
+`pdfTable = PDFTableMaster("data.pdf")`.
 
 
 > -  If you want to scrapeonly selected set of pages in your PDF file , You can use the following method to identify those pages.
@@ -32,12 +32,12 @@ pages = pdfTable.identify_Pages_To_Scrape(["A"]).
 
 > -  You can extract those pages to a new pdf file with the following line of code.
     
-fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional.
+`fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional`.
 
 
 ## Adjusting Parameters to fit your model
 ---------------------
-pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3}).
+`pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})`.
 
 > - You need to provide above 3 main parameter to help the program identify horizontal and vertical boundries of the PDF table.
 > - upperBoundry and lowerBoundry states the upper and lower boundries in the vertical axis to identify rows.
@@ -53,7 +53,7 @@ pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3}).
 > - cleanListMaster() method comes under CleanMaster class should define this functionality .
 > - Refer the example.py to get a clear understanding on how you can use this class.
 
-class clean(CleanMaster):
+`class clean(CleanMaster):
         def cleanListMaster(self , rows):
             #you have to implement this method with rules to filter out rows
             finalPageList = []
@@ -62,4 +62,4 @@ class clean(CleanMaster):
                     if(row[0].strip().startswith("LKA") and len(row[0].strip())  == 12 ):
                         finalPageList.append(clean.removeComma(row) )   
           
-            return finalPageList
+            return finalPageList`.
