@@ -53,8 +53,8 @@ pages = pdfTable.identify_Pages_To_Scrape(["A"]).
 > - cleanListMaster() method comes under CleanMaster class should define this functionality .
 > - Refer the example.py to get a clear understanding on how you can use this class.
 
-`class clean(CleanMaster):
-        def cleanListMaster(self , rows):
+` class clean(CleanMaster):
+       def cleanListMaster(self , rows):
             #you have to implement this method with rules to filter out rows
             finalPageList = []
             for row in rows:
