@@ -27,7 +27,7 @@ You need the following two modules into your project. Please note that the clean
 > -  If you want to scrapeonly selected set of pages in your PDF file , You can use the following method to identify those pages.
     identify_Pages_To_Scrape() excepts a list where you could provide specific keywords that can be found in your selected set of pages .
 
-pages = pdfTable.identify_Pages_To_Scrape(["A"]).
+`pages = pdfTable.identify_Pages_To_Scrape(["A"])`
 
 
 > -  You can extract those pages to a new pdf file with the following line of code.
