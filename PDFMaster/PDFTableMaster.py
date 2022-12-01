@@ -79,11 +79,6 @@ class PDFTableMaster:
         return ouput
     
     def extract_page_layouts(self):
-        """
-        Extracts LTPage objects from a pdf file.
-        modified from: http://www.degeneratestate.org/posts/2016/Jun/15/extracting-tabular-data-from-pdfs/
-        Tests show that using PDFQuery to extract the document is ~ 5 times faster than pdfminer.
-        """
         laparams = LAParams()
     
         with open(self.fileName, mode='rb') as pdf_file:
