@@ -17,19 +17,20 @@ You need the following two modules into your project. Please note that the clean
 
 ## Initial Step ob creating Objects
 ---------------------
-Project will provide you with a unstrucured table structure (Lists inside a list)
--->First you need to create a PDFTableMaster object using its constructor as folows.
+### Project will provide you with a unstrucured table structure (Lists inside a list)
+
+> - First you need to create a PDFTableMaster object using its constructor as folows.
 
 pdfTable = PDFTableMaster("data.pdf").
 
 
---> If you want to scrapeonly selected set of pages in your PDF file , You can use the following method to identify those pages.
+> -  If you want to scrapeonly selected set of pages in your PDF file , You can use the following method to identify those pages.
     identify_Pages_To_Scrape() excepts a list where you could provide specific keywords that can be found in your selected set of pages .
 
 pages = pdfTable.identify_Pages_To_Scrape(["A"]).
 
 
---> You can extract those pages to a new pdf file with the following line of code.
+> -  You can extract those pages to a new pdf file with the following line of code.
     
 fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional.
 
