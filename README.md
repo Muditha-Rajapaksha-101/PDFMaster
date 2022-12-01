@@ -1,6 +1,11 @@
 # PDFMaster
 A custom and Flexible module to scrape data from an editable PDF
 
+Installting The Package
+--------------------
+pip install PDFMaster
+
+
 Getting Started
 ---------------------
 import the following two modules into your project
