@@ -15,7 +15,7 @@ You need the following two modules into your project. Please note that the clean
 
 
 
-## Initial Step ob creating Objects
+## Initial Step of creating Objects
 ---------------------
 ### Project will provide you with a unstrucured table structure (Lists inside a list)
 
