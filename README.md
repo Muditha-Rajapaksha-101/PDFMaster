@@ -36,7 +36,7 @@ fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional.
 
 ## Adjusting Parameters to fit your model
 ---------------------
-pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})
+pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3}).
 
 -->You need to provide above 3 main parameter to help the program identify horizontal and vertical boundries of the PDF table.
 -->upperBoundry and lowerBoundry states the upper and lower boundries in the vertical axis to identify rows.
