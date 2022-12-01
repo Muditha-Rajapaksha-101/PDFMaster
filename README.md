@@ -8,7 +8,7 @@ pip install PDFMaster
 
 Getting Started
 ---------------------
-import the following two modules into your project
+You need the following two modules into your project. Please note that the cleaning funciton is optional
 
 from PDFMaster.PDFTableMaster import PDFTableMaster
 from PDFMaster.PDFTableMaster import CleanMaster
