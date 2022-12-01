@@ -64,4 +64,4 @@ class clean(CleanMaster):
                         finalPageList.append(clean.removeComma(row) )   
         
             return finalPageList
-```python:
+``` python:
