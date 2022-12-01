@@ -38,19 +38,19 @@ fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional.
 ---------------------
 pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3}).
 
--->You need to provide above 3 main parameter to help the program identify horizontal and vertical boundries of the PDF table.
--->upperBoundry and lowerBoundry states the upper and lower boundries in the vertical axis to identify rows.
--->These values should be modified to fit the PDF table you're about the scrape.
--->Margin defines the horizontal bountries of the table ( use to identify columns).
+> - You need to provide above 3 main parameter to help the program identify horizontal and vertical boundries of the PDF table.
+> - upperBoundry and lowerBoundry states the upper and lower boundries in the vertical axis to identify rows.
+> - These values should be modified to fit the PDF table you're about the scrape.
+> - Margin defines the horizontal bountries of the table ( use to identify columns).
 
 
 ## Cleaning Your Model
 ----------------------
 
--->Cleaning should by done by the user before the table is converted into a Pandas Dataframe.
--->User must implement the abstract class "CleanMaster" that comes with the PDFMaster paachage to define your cleaning policies.
--->cleanListMaster() method comes under CleanMaster class should define this functionality .
--->Refer the example.py to get a clear understanding on how you can use this class.
+> - Cleaning should by done by the user before the table is converted into a Pandas Dataframe.
+> - User must implement the abstract class "CleanMaster" that comes with the PDFMaster paachage to define your cleaning policies.
+> - cleanListMaster() method comes under CleanMaster class should define this functionality .
+> - Refer the example.py to get a clear understanding on how you can use this class.
 
 class clean(CleanMaster):
         def cleanListMaster(self , rows):
