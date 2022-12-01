@@ -1,12 +1,12 @@
 # PDFMaster
 A custom and Flexible module to scrape data from an editable PDF
 
-##Installting The Package
+## Installting The Package
 --------------------
 pip install PDFMaster.
 
 
-##Getting Started
+## Getting Started
 ---------------------
 You need the following two modules into your project. Please note that the cleaning funciton is optional.
 
@@ -15,7 +15,7 @@ You need the following two modules into your project. Please note that the clean
 
 
 
-##Initial Step ob creating Objects
+## Initial Step ob creating Objects
 ---------------------
 Project will provide you with a unstrucured table structure (Lists inside a list)
 -->First you need to create a PDFTableMaster object using its constructor as folows.
@@ -34,7 +34,7 @@ pages = pdfTable.identify_Pages_To_Scrape(["A"]).
 fileNew = pdfTable.extract_PDF_Pages_To_NewFile(pages) #Optional.
 
 
-##Adjusting Parameters to fit your model
+## Adjusting Parameters to fit your model
 ---------------------
 pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})
 
@@ -44,7 +44,7 @@ pdfTable.set_parameters({'upperBoundry':10, 'lowerBoundry':10 , 'margin':3})
 -->Margin defines the horizontal bountries of the table ( use to identify columns).
 
 
-Cleaning Your Model
+## Cleaning Your Model
 ----------------------
 
 -->Cleaning should by done by the user before the table is converted into a Pandas Dataframe.
