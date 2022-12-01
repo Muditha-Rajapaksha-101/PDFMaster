@@ -10,7 +10,7 @@ A custom and Flexible module to scrape data from an editable PDF
 ---------------------
 You need the following two modules into your project. Please note that the cleaning funciton is optional.
 
-`from PDFMaster.PDFTableMaster import PDFTableMaster`
+`from PDFMaster.PDFTableMaster import PDFTableMaster` .
 `from PDFMaster.PDFTableMaster import CleanMaster`
 
 
